@@ -31,7 +31,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-avz --delete"
-          SOURCE: "./"
+          SOURCE: "package.json"
           REMOTE_HOST: "118.190.209.112"
           REMOTE_USER: "root"
           TARGET: "/home/wwwroot/blog.alizeegod.com"

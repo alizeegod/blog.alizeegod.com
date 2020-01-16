@@ -23,16 +23,15 @@ jobs:
       - name: npm install and build
         run: |
           npm install
-          npm run build
         env:
           CI: true
       # Deploy
       - name: Deploy
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-avz --delete"
-          SOURCE: "[Current File Dir]"
-          REMOTE_HOST: "[Domain]"
-          REMOTE_USER: "[UserName]"
-          TARGET: "[Server Dir]"
+          SOURCE: "./"
+          REMOTE_HOST: "118.190.209.112"
+          REMOTE_USER: "root"
+          TARGET: "/home/wwwroot/blog.alizeegod.com"

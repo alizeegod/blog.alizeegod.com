@@ -26,12 +26,13 @@ jobs:
         env:
           CI: true
       # Deploy
-      - name: Deploy
-        uses: easingthemes/ssh-deploy@v2.0.7
+      - name: deploy to server
+        uses: AEnterprise/rsync-deploy@v1.0
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-avz --delete"
-          SOURCE: "package.json"
-          REMOTE_HOST: "118.190.209.112"
-          REMOTE_USER: "root"
-          TARGET: "/home/wwwroot/blog.alizeegod.com"
+          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-e -c -r --delete"
+          SERVER_PORT: '22'
+          FOLDER: "./"
+          SERVER_IP: '118.190.209.112'
+          USERNAME: 'root'
+          SERVER_DESTINATION: "/home/wwwroot/blog.alizeegod.com"

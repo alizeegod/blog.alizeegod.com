@@ -4,7 +4,8 @@
   "description": "alizeegod blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alizeegod/blog.alizeegod.com/issues"
   },
-  "homepage": "https://github.com/alizeegod/blog.alizeegod.com#readme"
+  "homepage": "https://github.com/alizeegod/blog.alizeegod.com#readme",
+  "dependencies": {
+    "vuepress": "^1.4.1"
+  }
 }

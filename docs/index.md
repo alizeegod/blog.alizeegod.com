@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /img/dota2-logo.png
+# heroImage: /img/dota2-logo.jpg
 heroText: Alizeegod's blog
 tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
 # actionText: 立刻进入 →

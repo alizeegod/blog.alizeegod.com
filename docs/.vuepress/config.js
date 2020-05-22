@@ -24,7 +24,7 @@ module.exports = {
   themeConfig: { // 主题配置
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/EB-logo.png', // 导航栏logo
+    logo: '/img/dota2-logo.png', // 导航栏logo
     repo: 'alizeegod/blog.alizeegod.com', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
@@ -57,12 +57,12 @@ module.exports = {
     // },
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-      name: 'Evan Xu', // 必需
-      href: 'https://github.com/xugaoyi' // 可选的
+      name: 'Alizeegod', // 必需
+      href: 'https://github.com/alizeegod' // 可选的
     },
     blogger:{ // 博主信息，显示在首页侧边栏
       avatar: 'https://avatars1.githubusercontent.com/u/14208754?s=60&v=4',
-      name: 'alizeegod',
+      name: 'Alizeegod',
       slogan: '程序猿'
     },
     social:{ // 社交图标，显示于博主信息栏和页脚栏

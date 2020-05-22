@@ -36,10 +36,10 @@ jobs:
         REMOTE_HOST: ${{ secrets.HOST }}
         REMOTE_USER: "root"
         TARGET: ${{ secrets.DEPLOY_DIR }}
-    - name: Run a command remotely
-      uses: docker://evaneos/ssh-action:0.1.0
-      with:
-        hosts: ${{ secrets.HOST }}
-        user: 'root'
-        private_key: ${{ secrets.ACCESS_TOKEN }}
-        commands: cd ${{ secrets.DEPLOY_DIR }}
+    #- name: Run a command remotely
+     # uses: docker://evaneos/ssh-action:0.1.0
+      #with:
+      #  hosts: ${{ secrets.HOST }}
+       # user: 'root'
+       # private_key: ${{ secrets.ACCESS_TOKEN }}
+       # commands: cd ${{ secrets.DEPLOY_DIR }}
